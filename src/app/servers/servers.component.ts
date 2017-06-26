@@ -1,3 +1,4 @@
+// servers.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ServersService } from './servers.service';
@@ -19,7 +20,7 @@ export class ServersComponent implements OnInit {
   }
 
   onReload(){
-  	this.router.navigate(['/servers']);
+  	// this.router.navigate(['/servers'], {relativeTo: this.route});
   }
 
 }
